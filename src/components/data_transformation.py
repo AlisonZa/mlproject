@@ -1,8 +1,6 @@
 import os, sys
 from src.exception import CustomException
 from src.logger import logging
-import pandas as pd
-from sklearn.model_selection import train_test_split
 import numpy as np
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer

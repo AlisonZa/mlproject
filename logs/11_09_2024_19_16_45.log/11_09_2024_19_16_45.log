@@ -1,0 +1,31 @@
+[ 2024-11-09 19:16:49,649 ] - 25 root - INFO - Entered the initiate_data_ingestion method
+[ 2024-11-09 19:16:49,689 ] - 38 root - INFO - Successfully ran the initiate_data_ingestion method
+Artifacts saved to: C:\Users\Marina\Desktop\ML Operations\0 - KrishNaik Course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\train.csv 
+C:\Users\Marina\Desktop\ML Operations\0 - KrishNaik Course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\test.csv
+[ 2024-11-09 19:16:49,689 ] - 33 root - INFO - Entered the get_preprocessor_artifact method
+[ 2024-11-09 19:16:49,689 ] - 44 root - INFO - Numerical Columns to preprocess: ['writing_score', 'reading_score']
+Categorical Columns to preprocess: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2024-11-09 19:16:49,694 ] - 68 root - INFO - Saved the preprocessor artifact to:
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\preprocessor.pkl
+[ 2024-11-09 19:16:49,694 ] - 69 root - INFO - Sucessfully ran the get_preprocessor_artifact method
+[ 2024-11-09 19:16:49,694 ] - 80 root - INFO - Entered the initiate_data_transformation method
+[ 2024-11-09 19:16:49,699 ] - 84 root - INFO - Successfully Loaded the preprocessor artifact
+[ 2024-11-09 19:16:49,700 ] - 86 root - INFO - Splitting the target from the features
+[ 2024-11-09 19:16:49,704 ] - 94 root - INFO - Succesfully splitted the the target from the features
+[ 2024-11-09 19:16:49,704 ] - 96 root - INFO - Training the preprocessor
+[ 2024-11-09 19:16:49,733 ] - 99 root - INFO - Saved the trained_preprocessor artifact to:
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\trained_preprocessor.pkl
+[ 2024-11-09 19:16:49,734 ] - 101 root - INFO - Starting Train_Data Preprocessing
+[ 2024-11-09 19:16:49,745 ] - 103 root - INFO - Successfully Ran rain_Data Preprocessing
+[ 2024-11-09 19:16:49,745 ] - 105 root - INFO - Starting Test Data_Preprocessing
+[ 2024-11-09 19:16:49,762 ] - 107 root - INFO - Successfully Ran Test_Data Preprocessing
+[ 2024-11-09 19:16:49,762 ] - 109 root - INFO - Saving files resulting numpy arrays to artifact folder
+[ 2024-11-09 19:16:49,772 ] - 115 root - INFO - Saved the files to:
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\transformed_X_train.npy
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\transformed_X_test.npy
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\y_train.npy
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\y_test.npy
+[ 2024-11-09 19:16:49,772 ] - 116 root - INFO - Sucessfully ran the initiate_data_transformation method
+[ 2024-11-09 19:19:22,251 ] - 231 root - INFO - Best found model on both training and testing dataset
+[ 2024-11-09 19:19:22,255 ] - 239 root - INFO - Succesfully saved Linear Regression to: 
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\tuned_models\Linear_Regression_best_model.pkl

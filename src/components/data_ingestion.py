@@ -4,6 +4,8 @@ from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from src.components.data_transformation import DataTransformation
+from src.components.model_trainer import ModelTrainer
+
 
 from dataclasses import dataclass
 
@@ -51,6 +53,14 @@ if __name__ == "__main__":
     preprocessor = data_transformation_obj.get_preprocessor_artifact()
     transformed_X_train, transformed_X_test, y_train, y_test, trained_preprocessor = data_transformation_obj.initiate_data_transformation(train_split, test_split)
     
+    # Model Training and hyperparam tuning:
+    model_trainer_obj = ModelTrainer()
+    # Minhas contribuições:
+    ## trained_model_list = model_trainer_obj.intiate_model_trainer_regression(transformed_X_train, y_train)
+    ## tuned_model_list = model_trainer_obj.hyperparameter_tuning_grid_search(trained_model_list, transformed_X_train, y_train)
+    ## model_trainer_obj.save_models(tuned_model_list)
+    
+    r2_score = model_trainer_obj.initiate_brute_force_approach(transformed_X_train, transformed_X_test, y_train, y_test)
 
 
 
