@@ -1,0 +1,28 @@
+[ 2024-11-08 23:40:26,478 ] - 23 root - INFO - Entered the initiate_data_ingestion method
+[ 2024-11-08 23:40:26,516 ] - 36 root - INFO - Successfully ran the initiate_data_ingestion method
+Artifacts saved to: C:\Users\Marina\Desktop\ML Operations\0 - KrishNaik Course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\train.csv 
+C:\Users\Marina\Desktop\ML Operations\0 - KrishNaik Course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\test.csv
+[ 2024-11-08 23:40:26,516 ] - 35 root - INFO - Entered the get_preprocessor_artifact method
+[ 2024-11-08 23:40:26,517 ] - 46 root - INFO - Numerical Columns to preprocess: ['writing_score', 'reading_score']
+Categorical Columns to preprocess: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2024-11-08 23:40:26,521 ] - 70 root - INFO - Saved the preprocessor artifact to:
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\preprocessor.pkl
+[ 2024-11-08 23:40:26,521 ] - 71 root - INFO - Sucessfully ran the get_preprocessor_artifact method
+[ 2024-11-08 23:40:26,521 ] - 82 root - INFO - Entered the initiate_data_transformation method
+[ 2024-11-08 23:40:26,524 ] - 86 root - INFO - Successfully Loaded the preprocessor artifact
+[ 2024-11-08 23:40:26,524 ] - 88 root - INFO - Splitting the target from the features
+[ 2024-11-08 23:40:26,529 ] - 96 root - INFO - Succesfully splitted the the target from the features
+[ 2024-11-08 23:40:26,529 ] - 98 root - INFO - Training the preprocessor
+[ 2024-11-08 23:40:26,581 ] - 101 root - INFO - Saved the trained_preprocessor artifact to:
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\trained_preprocessor.pkl
+[ 2024-11-08 23:40:26,582 ] - 103 root - INFO - Starting Train_Data Preprocessing
+[ 2024-11-08 23:40:26,602 ] - 105 root - INFO - Successfully Ran rain_Data Preprocessing
+[ 2024-11-08 23:40:26,603 ] - 107 root - INFO - Starting Test Data_Preprocessing
+[ 2024-11-08 23:40:26,620 ] - 109 root - INFO - Successfully Ran Test_Data Preprocessing
+[ 2024-11-08 23:40:26,620 ] - 111 root - INFO - Saving files resulting numpy arrays to artifact folder
+[ 2024-11-08 23:40:26,630 ] - 117 root - INFO - Saved the files to:
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\transformed_X_train.npy
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\transformed_X_test.npy
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\y_train.npy
+c:\users\marina\desktop\ml operations\0 - krishnaik course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\y_test.npy
+[ 2024-11-08 23:40:26,630 ] - 118 root - INFO - Sucessfully ran the initiate_data_transformation method

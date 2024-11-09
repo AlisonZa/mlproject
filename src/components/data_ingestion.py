@@ -49,7 +49,8 @@ if __name__ == "__main__":
     # Data Transformation
     data_transformation_obj = DataTransformation()
     preprocessor = data_transformation_obj.get_preprocessor_artifact()
-    transformed_train, transformed_test = data_transformation_obj.initiate_data_transformation(train_split, test_split)
+    transformed_X_train, transformed_X_test, y_train, y_test, trained_preprocessor = data_transformation_obj.initiate_data_transformation(train_split, test_split)
+    
 
 
 
