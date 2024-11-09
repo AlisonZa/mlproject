@@ -1,0 +1,4 @@
+[ 2024-11-08 20:26:09,522 ] - 22 root - INFO - Entered the initiate_data_ingestion method
+[ 2024-11-08 20:26:09,550 ] - 37 root - INFO - Successfully ran the initiate_data_ingestion method
+Artifacts saved to: C:\Users\Marina\Desktop\ML Operations\0 - KrishNaik Course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\train.csv 
+C:\Users\Marina\Desktop\ML Operations\0 - KrishNaik Course\20__end_to_end_ds_project_implementation_multiple_aws_azure_deployment\my_project\artifacts\test.csv

@@ -3,6 +3,7 @@ from src.exception import CustomException
 from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from src.components.data_transformation import DataTransformation
 
 from dataclasses import dataclass
 
@@ -22,18 +23,18 @@ class DataIngestion:
         logging.info(f"Entered the {self.initiate_data_ingestion.__name__} method")
 
         try:
-            logging.info(f"Successfully ran the {self.initiate_data_ingestion.__name__} method")
             dataframe = pd.read_csv(self.ingestion_config.raw_data_path)
-            
-            # logging.info(f"Creating the folders to save the splits")
 
             # os.makedirs()
 
             # TODO stratify
             train_split, test_split = train_test_split(dataframe)
 
-            train_split.to_csv(self.ingestion_config.train_data_path, index = False)
-            test_split.to_csv(self.ingestion_config.test_data_path, index = False)
+            train_split.to_csv(self.ingestion_config.train_data_path, index = False, header = True)
+            test_split.to_csv(self.ingestion_config.test_data_path, index = False, header = True)
+            
+            logging.info(f"Successfully ran the {self.initiate_data_ingestion.__name__} method\nArtifacts saved to: {self.ingestion_config.train_data_path} \n{self.ingestion_config.test_data_path}")
+            return train_split, test_split
 
         except Exception as e:
             
@@ -41,8 +42,15 @@ class DataIngestion:
             raise CustomException(e, sys)
         
 if __name__ == "__main__":
+    # Data Ingestion
     data_ingestion_obj = DataIngestion()
-    data_ingestion_obj.initiate_data_ingestion()
+    train_split, test_split = data_ingestion_obj.initiate_data_ingestion()
+    
+    # Data Transformation
+    data_transformation_obj = DataTransformation()
+    preprocessor = data_transformation_obj.get_preprocessor_artifact()
+    transformed_train, transformed_test = data_transformation_obj.initiate_data_transformation(train_split, test_split)
+
 
 
         
