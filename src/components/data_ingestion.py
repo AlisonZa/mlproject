@@ -61,10 +61,10 @@ if __name__ == "__main__":
     ## model_trainer_obj.save_models(tuned_model_list)
     
     r2_score = model_trainer_obj.initiate_brute_force_approach(transformed_X_train, transformed_X_test, y_train, y_test)
+    
 
 
 
-        
 
 
 

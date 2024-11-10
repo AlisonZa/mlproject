@@ -1,0 +1,18 @@
+[ 2024-11-10 20:45:49,298 ] - 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-11-10 20:45:49,318 ] - 97 werkzeug - INFO -  * Debugger PIN: 697-975-361
+[ 2024-11-10 20:46:00,534 ] - 25 root - INFO - Input data:   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  reading_score  writing_score
+0   male        group B           bachelor's degree  free/reduced                    none           50.0           70.0
+[ 2024-11-10 20:46:00,562 ] - 28 root - INFO - Transformed data: [[4.6000951  3.42437867 0.         2.00025605 0.         2.50628753
+  0.         0.         0.         0.         2.94174203 0.
+  0.         0.         0.         2.09024775 0.         0.
+  2.08165551]]
+[ 2024-11-10 20:46:00,565 ] - 31 root - INFO - Predicitons: [66.44567871]
+[ 2024-11-10 20:46:00,578 ] - 97 werkzeug - INFO - 127.0.0.1 - - [10/Nov/2024 20:46:00] "POST /predictdata HTTP/1.1" 200 -
+[ 2024-11-10 20:46:34,413 ] - 25 root - INFO - Input data:   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  reading_score  writing_score
+0   male        group A                 high school  free/reduced                    none           70.0           85.0
+[ 2024-11-10 20:46:34,432 ] - 28 root - INFO - Transformed data: [[5.58582976 4.79413014 0.         2.00025605 3.52989059 0.
+  0.         0.         0.         0.         0.         2.62591135
+  0.         0.         0.         2.09024775 0.         0.
+  2.08165551]]
+[ 2024-11-10 20:46:34,434 ] - 31 root - INFO - Predicitons: [83.90966797]
+[ 2024-11-10 20:46:34,450 ] - 97 werkzeug - INFO - 127.0.0.1 - - [10/Nov/2024 20:46:34] "POST /predictdata HTTP/1.1" 200 -
